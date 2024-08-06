@@ -119,6 +119,8 @@ html{
     align-items: center;
     justify-content: end;
     padding: 0em 1em;
+    position: relative;
+    z-index: 1;
 }
 .nav__profile .hamburguesa{
     background: transparent;
@@ -156,6 +158,7 @@ html{
     width: 240px;
     height: auto;
     position: relative;
+    z-index: 2;
 }
 .nav__profile .profile__header{
     display: flex;
@@ -237,6 +240,8 @@ html{
     width: 100%;
     height: auto;
     background:var(--white);
+    position: relative;
+    z-index: 0;
 }
 /* Seccion de dashborad */
 .dashborad{
@@ -246,12 +251,14 @@ html{
     padding: 2em 1em;
     place-content: center;
     position: relative;
+    z-index: 1;
 }
 .dashborad .enlaces{
     position: absolute;
     padding: 0em 1em;
     left: 2em;
     top: .1em;
+    z-index: 2;
 }
 .dashborad .enlaces a{
     color: var(--flame);
