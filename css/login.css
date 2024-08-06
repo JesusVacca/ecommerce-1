@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+     font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+html{
+    font-size: 16px;
+}
+:root{
+    --floral-white: #fffcf2ff;
+    --timberwolf: #ccc5b9ff;
+    --black-olive: #403d39ff;
+    --eerie-black: #252422ff;
+    --flame: #eb5e28ff;
+    --white:#fff;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formularios{
+   position: relative;
+   overflow: hidden;
+}
+form{
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-radius: .4em;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    transition: all .3s ease-in-out;
+    animation: show .3s ease-in-out;
+}
+.formularios h3{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    color: var(--flame);
+    border-bottom: 1px solid;
+}
+.row{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: .5em 0em;
+}
+.row.icon{
+    justify-content: center;
+    align-items: center;
+}
+.row img{
+    width: 130px;
+    aspect-ratio: 1/1;
+    margin: 1em 0em;
+}
+.row label{
+    color: var(--black-olive);
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+.row input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-radius: .3em;
+    outline: none;
+    font-size: .9rem;
+    text-align: center;
+    color: var(--eerie-black);
+    margin: .3em 0em;
+}
+.row input:focus{
+    border-color: var(--flame);
+}
+.row .submit{
+    color: var(--white);
+    background: var(--flame);
+    border: none;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.row.enlaces{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5em 0em;
+}
+.row.row.enlaces a{
+    font-size: .7rem;
+    text-decoration: none;
+    color: var(--eerie-black);
+    transition: all .3s ease-in-out;
+}
+.row.row.enlaces a:hover{
+    color: var(--flame);
+}
+.register{
+    display: none;
+}
+
+@keyframes show {
+    from{
+        opacity: .5;
+        scale: 10%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}

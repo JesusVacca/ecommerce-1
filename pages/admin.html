@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>Administración</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="root">
+        <header class="header" id="header">
+            <div class="nav" id="nav">
+                <ul>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li class="links__nav">
+                        <a href="#">Gestion de Usuarios</a>
+                        <span></span>
+                        <span></span>
+                        <div class="items__nav">
+                            <a href="#">Listado de usuarios</a>
+                            <a href="#">Roles y permisos</a>
+                        </div>
+                    </li>
+                    <li class="links__nav">
+                        <a href="#">Gestion de productos</a>
+                        <span></span>
+                        <span></span>
+                        <div class="items__nav">
+                            <a href="#">Listado de productos</a>
+                            <a href="#">Nuevo producto</a>
+                        </div>
+                    </li>
+                    <li class="links__nav">
+                        <a href="#">Gestion de ventas</a>
+                        <span></span>
+                        <span></span>
+                        <div class="items__nav">
+                            <a href="#">Historial de ventas</a>
+                            <a href="#">Reporte de ventas</a>
+                        </div>
+                    </li>
+                    <li class="links__nav">
+                        <a href="#">Gestion de pedidos</a>
+                        <span></span>
+                        <span></span>
+                        <div class="items__nav">
+                            <a href="#">Listado de pedidos</a>
+                            <a href="#">Nuevo pedido</a>
+                        </div>
+                    </li>
+                    <li class="links__nav">
+                        <a href="#">Gestion de categorias</a>
+                        <span></span>
+                        <span></span>
+                        <div class="items__nav">
+                            <a href="#">Listado de categorías</a>
+                            <a href="#">Nueva categoría</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">Promociones y descuentos</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="main" id="main">
+            <div class="nav__profile" id="nav__profile">
+                <button type="button" class="hamburguesa" id="hamburguesa">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="profile">
+                    <div class="profile__header" id="profile__header">
+                        <img src="../img/fondo2.jpg" alt="Perfil">
+                        <button type="button">Jesus Rodolfo Vacca Romero</button>
+                    </div>
+                    <div class="profile__body" id="profile__body">
+                        <div class="title__body">
+                            <span class="nombre">Jesus Rodolfo Vacca Romero</span>
+                            <span class="rol">Administrador</span>
+                        </div>
+                        <hr>
+                        <a href="#">Mi perfil</a>
+                        <hr>
+                        <a href="#">Cerrar sesión</a>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="dashborad">
+                    <div class="enlaces">
+                        <a href="">Dashboard</a>
+                        <span>/</span>
+                        <a href="../index.html">Inicio</a>
+                    </div>
+                    <div class="dashborad__tables">
+                        <div class="table__header">
+                            Prodcutos recientes
+                        </div>
+                        <div class="table">
+                            <div class="thead">
+                                <div class="row">
+                                    <div class="cell">#</div>
+                                    <div class="cell">Producto</div>
+                                    <div class="cell">Fecha</div>
+                                    <div class="cell">Cantidad</div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="row">
+                                    <div class="cell">1</div>
+                                    <div class="cell">Prodcuto</div>
+                                    <div class="cell">20-04-2000</div>
+                                    <div class="cell">45</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashborad__tables">
+                        <div class="table__header">
+                            Ultimas ventas
+                        </div>
+                        <div class="table">
+                            <div class="thead">
+                                <div class="row">
+                                    <div class="cell">#</div>
+                                    <div class="cell">Producto</div>
+                                    <div class="cell">Fecha</div>
+                                    <div class="cell">Cantidad</div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="row">
+                                    <div class="cell">1</div>
+                                    <div class="cell">Huevos</div>
+                                    <div class="cell">20-04-2000</div>
+                                    <div class="cell">45</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashborad__tables">
+                        <div class="table__header">
+                            Provedores
+                        </div>
+                        <div class="table">
+                            <div class="thead">
+                                <div class="row">
+                                    <div class="cell">#</div>
+                                    <div class="cell">Nombre</div>
+                                    <div class="cell">País</div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="row">
+                                    <div class="cell">1</div>
+                                    <div class="cell">Postobón</div>
+                                    <div class="cell">Colombia</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashborad__tables">
+                        <div class="table__header">
+                            Categorias
+                        </div>
+                        <div class="table">
+                            <div class="thead">
+                                <div class="row">
+                                    <div class="cell">#</div>
+                                    <div class="cell">Nombre</div>
+                                    <div class="cell">País</div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="row">
+                                    <div class="cell">1</div>
+                                    <div class="cell">Postobón</div>
+                                    <div class="cell">Colombia</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashborad__tables">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../script/admin.js"></script>
+</body>
+</html>
